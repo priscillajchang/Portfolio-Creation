@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priscilla Chang | Personal Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --primary: #1e3a8a;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --accent: #2563eb;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary);
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.25rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .statement {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .skill-category h3 {
+      font-size: 1rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      background: #eff6ff;
+      color: var(--accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .project-card {
+      margin-bottom: 1.5rem;
+    }
+
+    .project-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .project-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin: 0.5rem 0;
+    }
+
+    .project-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="Priscilla Chang" class="profile-img" />
+      <h1>Priscilla Chang</h1>
+      <p class="statement">
+        Finance and Economics undergraduate at Rutgers University driven to solve complex strategic and financial problems through analytical rigorous modeling and collaborative leadership.
+      </p>
+    </header>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Finance & Analytics</h3>
+          <div class="skill-tags">
+            <span class="tag">Financial Modeling</span>
+            <span class="tag">Process Optimization</span>
+            <span class="tag">SIPOC Analysis</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Leadership & Communications</h3>
+          <div class="skill-tags">
+            <span class="tag">Organizational Strategy</span>
+            <span class="tag">Peer Mentorship</span>
+            <span class="tag">Bilingual (English / Mandarin)</span>
+            <span class="tag">Strategic Planning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      
+      <div class="project-card">
+        <div class="project-title">SleeepyPods — Campus Wellness Business Plan</div>
+        <div class="project-desc">
+          Co-developed a business venture plan for tech-enabled campus nap pods targeting commuter student wellness. Modeled operational workflows (SIPOC), customer loyalty metrics, pricing strategies, and global franchise expansion frameworks.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/priscillachang/Portfolio-Creation" target="_blank" rel="noopener">View Project Presentation &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Rutgers Entrepreneurial Society — Organizational Case Study</div>
+        <div class="project-desc">
+          Analyzed member engagement and attendance bottlenecks within RES. Developed actionable communication frameworks, extrinsic incentive strategies, and executive leadership recommendations to drive member participation.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/priscillachang/Portfolio-Creation" target="_blank" rel="noopener">View Strategy Case Study &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Priscilla Chang • Hosted on GitHub Pages</p>
+    </footer>
+  </div>
+
+</body>
+</html>
